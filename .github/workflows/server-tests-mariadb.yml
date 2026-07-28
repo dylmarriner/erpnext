@@ -57,6 +57,9 @@ jobs:
   # The expensive, non-parallelisable work happens here exactly once instead of on every shard.
   setup:
     name: Build & reinstall (setup)
+    # The erpnext-arc-* scale sets only exist in frappe's infrastructure; on forks the job
+    # would queue forever waiting for a runner that never comes, so skip it there.
+    if: ${{ github.repository == 'frappe/erpnext' }}
     # Dedicated scale set (fat cpu request) so the build+reinstall runs at full speed, uncontended
     # by the many thin test shards. Same CI image + /home/ci path + 127.0.0.1 DB as the shards,
     # so the packaged bench (and its venv) transplants cleanly.
