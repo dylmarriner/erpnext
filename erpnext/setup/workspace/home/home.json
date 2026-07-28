@@ -1,7 +1,7 @@
 {
  "app": "erpnext",
  "charts": [],
- "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"nWd2KJPW8l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"snrzfbFr5Y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"SHJKakmLLf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"id\":\"CPxEyhaf3G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"d_KVM1gsf9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"JVu8-FJZCu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"JiuSi0ubOg\",\"type\":\"card\",\"data\":{\"card_name\":\"Accounting\",\"col\":4}},{\"id\":\"ji2Jlm3Q8i\",\"type\":\"card\",\"data\":{\"card_name\":\"Stock\",\"col\":4}},{\"id\":\"N61oiXpuwK\",\"type\":\"card\",\"data\":{\"card_name\":\"CRM\",\"col\":4}},{\"id\":\"6J0CVl1mPo\",\"type\":\"card\",\"data\":{\"card_name\":\"Data Import and Settings\",\"col\":4}}]",
+ "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"hs1XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}},{\"id\":\"hs2XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order\",\"col\":3}},{\"id\":\"hs3XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Transfer\",\"col\":3}},{\"id\":\"hs4XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Entry\",\"col\":3}},{\"id\":\"hs5XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"hs6XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"hs7XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}},{\"id\":\"hs8XPLg8lb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"id\":\"d_KVM1gsf9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"JVu8-FJZCu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"hc1Si0ubOg\",\"type\":\"card\",\"data\":{\"card_name\":\"Daily Work\",\"col\":4}},{\"id\":\"hc2Jlm3Q8i\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"id\":\"hc3oiXpuwK\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters & Setup\",\"col\":4}}]",
  "creation": "2020-01-23 13:46:38.833076",
  "custom_blocks": [],
  "docstatus": 0,
@@ -16,7 +16,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Accounting",
+   "label": "Daily Work",
    "link_count": 0,
    "onboard": 0,
    "type": "Card Break"
@@ -25,9 +25,9 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Chart of Accounts",
+   "label": "Sales Order",
    "link_count": 0,
-   "link_to": "Account",
+   "link_to": "Sales Order",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -36,9 +36,168 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Company",
+   "label": "Purchase Order",
    "link_count": 0,
-   "link_to": "Company",
+   "link_to": "Purchase Order",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock / Branch Transfer",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery Note",
+   "link_count": 0,
+   "link_to": "Delivery Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Receipt",
+   "link_count": 0,
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Accounts Receivable",
+   "link_count": 0,
+   "link_to": "Accounts Receivable",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Accounts Payable",
+   "link_count": 0,
+   "link_to": "Accounts Payable",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Balance",
+   "link_count": 0,
+   "link_to": "Stock Balance",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Stock Ledger",
+   "link_count": 0,
+   "link_to": "Stock Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sales Person-wise Transaction Summary",
+   "link_count": 0,
+   "link_to": "Sales Person-wise Transaction Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sales Analytics",
+   "link_count": 0,
+   "link_to": "Sales Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters & Setup",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -66,29 +225,10 @@
    "type": "Link"
   },
   {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Stock",
-   "link_count": 0,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Item",
-   "link_count": 0,
-   "link_to": "Item",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Warehouse",
+   "label": "Warehouse (Branches)",
    "link_count": 0,
    "link_to": "Warehouse",
    "link_type": "DocType",
@@ -99,83 +239,34 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Brand",
+   "label": "Sales Person",
    "link_count": 0,
-   "link_to": "Brand",
+   "link_to": "Sales Person",
    "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Unit of Measure (UOM)",
-   "link_count": 0,
-   "link_to": "UOM",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Stock Reconciliation",
-   "link_count": 0,
-   "link_to": "Stock Reconciliation",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "CRM",
-   "link_count": 0,
    "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Lead",
-   "link_count": 0,
-   "link_to": "Lead",
-   "link_type": "DocType",
-   "onboard": 1,
    "type": "Link"
   },
   {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Customer Group",
+   "label": "Payment Terms Template",
    "link_count": 0,
-   "link_to": "Customer Group",
+   "link_to": "Payment Terms Template",
    "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Territory",
-   "link_count": 0,
-   "link_to": "Territory",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Data Import and Settings",
-   "link_count": 0,
    "onboard": 0,
-   "type": "Card Break"
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "dependencies": "",
@@ -185,55 +276,11 @@
    "link_count": 0,
    "link_to": "Data Import",
    "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Opening Invoice Creation Tool",
-   "link_count": 0,
-   "link_to": "Opening Invoice Creation Tool",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Chart of Accounts Importer",
-   "link_count": 0,
-   "link_to": "Chart of Accounts Importer",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Letter Head",
-   "link_count": 0,
-   "link_to": "Letter Head",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Email Account",
-   "link_count": 0,
-   "link_to": "Email Account",
-   "link_type": "DocType",
-   "onboard": 1,
+   "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-07-17 07:55:00.592653",
+ "modified": "2026-07-28 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "Setup",
  "name": "Home",
@@ -247,6 +294,39 @@
  "sequence_id": 1.0,
  "shortcuts": [
   {
+   "color": "Blue",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "stats_filter": "{\"status\": [\"in\", [\"To Deliver and Bill\", \"To Bill\", \"To Deliver\"]]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "label": "Purchase Order",
+   "link_to": "Purchase Order",
+   "stats_filter": "{\"status\": [\"in\", [\"To Receive and Bill\", \"To Bill\", \"To Receive\"]]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "Stock Transfer",
+   "link_to": "Stock Entry",
+   "stats_filter": "{\"stock_entry_type\": \"Material Transfer\", \"docstatus\": 0}",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "label": "Payment Entry",
+   "link_to": "Payment Entry",
+   "type": "DocType"
+  },
+  {
+   "label": "Sales Invoice",
+   "link_to": "Sales Invoice",
+   "stats_filter": "{\"status\": [\"in\", [\"Overdue\", \"Partly Paid\", \"Unpaid\"]]}",
+   "type": "DocType"
+  },
+  {
    "label": "Item",
    "link_to": "Item",
    "type": "DocType"
@@ -260,27 +340,9 @@
    "label": "Supplier",
    "link_to": "Supplier",
    "type": "DocType"
-  },
-  {
-   "label": "Sales Invoice",
-   "link_to": "Sales Invoice",
-   "type": "DocType"
   }
  ],
  "sidebar_items": [
-  {
-   "child": 0,
-   "collapsible": 1,
-   "default_workspace": 0,
-   "indent": 0,
-   "keep_closed": 0,
-   "label": "Item",
-   "link_to": "Item",
-   "link_type": "DocType",
-   "open_in_new_tab": 0,
-   "show_arrow": 0,
-   "type": "Link"
-  },
   {
    "child": 0,
    "collapsible": 1,
@@ -300,8 +362,8 @@
    "default_workspace": 0,
    "indent": 0,
    "keep_closed": 0,
-   "label": "Customer",
-   "link_to": "Customer",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
    "link_type": "DocType",
    "open_in_new_tab": 0,
    "show_arrow": 0,
@@ -313,8 +375,8 @@
    "default_workspace": 0,
    "indent": 0,
    "keep_closed": 0,
-   "label": "Supplier",
-   "link_to": "Supplier",
+   "label": "Purchase Order",
+   "link_to": "Purchase Order",
    "link_type": "DocType",
    "open_in_new_tab": 0,
    "show_arrow": 0,
@@ -326,8 +388,21 @@
    "default_workspace": 0,
    "indent": 0,
    "keep_closed": 0,
-   "label": "Sales Invoice",
-   "link_to": "Sales Invoice",
+   "label": "Stock Transfer",
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "default_workspace": 0,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Payment Entry",
+   "link_to": "Payment Entry",
    "link_type": "DocType",
    "open_in_new_tab": 0,
    "show_arrow": 0,
