@@ -10,6 +10,12 @@ permissions:
 
 jobs:
   main:
+    # The backport action authenticates with RELEASE_TOKEN, a secret that only
+    # exists in the upstream organisation. On a fork it resolves to an empty
+    # string and the action aborts with "Input required and not supplied:
+    # token", so every closed or labelled pull request leaves a failed run
+    # behind. Backporting is an upstream release activity, so skip it here.
+    if: ${{ github.repository == 'frappe/erpnext' }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

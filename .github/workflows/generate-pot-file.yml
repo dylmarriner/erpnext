@@ -11,6 +11,8 @@ on:
 jobs:
   regenerate-pot-file:
     name: Regenerate POT file
+    # Pushes translation updates using the upstream-only RELEASE_TOKEN secret.
+    if: ${{ github.repository == 'frappe/erpnext' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

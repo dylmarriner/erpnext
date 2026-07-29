@@ -15,6 +15,9 @@ on:
 jobs:
   stable-release:
     name: Release
+    # Opens upstream release pull requests using the upstream-only
+    # RELEASE_TOKEN secret; it has no meaning on a fork.
+    if: ${{ github.repository == 'frappe/erpnext' }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

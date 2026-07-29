@@ -22,6 +22,9 @@ permissions:
 jobs:
   trigger-runners:
     name: Trigger sync → ${{ matrix.hotfix_branch }}
+    # Dispatches with the upstream-only RELEASE_TOKEN and targets upstream
+    # hotfix branches, neither of which exist on a fork.
+    if: ${{ github.repository == 'frappe/erpnext' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
