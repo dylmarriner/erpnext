@@ -10,7 +10,7 @@
  "hide_custom": 0,
  "icon": "headset",
  "idx": 0,
- "is_hidden": 0,
+ "is_hidden": 1,
  "label": "Support",
  "links": [
   {
