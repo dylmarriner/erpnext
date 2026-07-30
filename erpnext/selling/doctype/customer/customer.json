@@ -190,6 +190,7 @@
    "options": "User"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "customer_group",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -202,6 +203,7 @@
    "search_index": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "territory",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -380,6 +382,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "description": "Defines when payment is due (e.g. Net 30, 50% advance). Applied automatically on invoices for this customer.",
    "fieldname": "payment_terms",
    "fieldtype": "Link",
