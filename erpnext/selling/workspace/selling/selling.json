@@ -6,14 +6,14 @@
    "label": "Sales Order Trends"
   }
  ],
- "content": "[{\"id\":\"vBSf8Vi9U8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Trends\",\"col\":12}},{\"id\":\"aW2i5R5GRP\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"43fzlS1qZg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Sales Orders\",\"col\":4}},{\"id\":\"jhtxl-XOGi\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Sales Amount\",\"col\":4}},{\"id\":\"0Ioq-P11FP\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Average Order Value\",\"col\":4}},{\"id\":\"0BcePLg0g1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"uze5dJ1ipL\",\"type\":\"card\",\"data\":{\"card_name\":\"Selling\",\"col\":4}},{\"id\":\"3j2fYwMAkq\",\"type\":\"card\",\"data\":{\"card_name\":\"Point of Sale\",\"col\":4}},{\"id\":\"xImm8NepFt\",\"type\":\"card\",\"data\":{\"card_name\":\"Items and Pricing\",\"col\":4}},{\"id\":\"6MjIe7KCQo\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"lBu2EKgmJF\",\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"id\":\"1ARHrjg4kI\",\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}}]",
+ "content": "[{\"id\":\"vBSf8Vi9U8\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Sales Order Trends\",\"col\":12}},{\"id\":\"aW2i5R5GRP\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"43fzlS1qZg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Sales Orders\",\"col\":4}},{\"id\":\"jhtxl-XOGi\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Sales Amount\",\"col\":4}},{\"id\":\"0Ioq-P11FP\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Average Order Value\",\"col\":4}},{\"id\":\"0BcePLg0g1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports &amp; Masters</b></span>\",\"col\":12}},{\"id\":\"card-selling\",\"type\":\"card\",\"data\":{\"card_name\":\"Selling\",\"col\":4}},{\"id\":\"card-items-and-pricing\",\"type\":\"card\",\"data\":{\"card_name\":\"Items and Pricing\",\"col\":4}},{\"id\":\"card-settings\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"card-key-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}}]",
  "creation": "2020-01-28 11:49:12.092882",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "sell",
+ "icon": "store",
  "idx": 0,
  "is_hidden": 0,
  "label": "Selling",
@@ -41,17 +41,6 @@
    "dependencies": "Item, Customer",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Quotation",
-   "link_count": 0,
-   "link_to": "Quotation",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item, Customer",
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Sales Order",
    "link_count": 0,
    "link_to": "Sales Order",
@@ -68,28 +57,6 @@
    "link_to": "Sales Invoice",
    "link_type": "DocType",
    "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item, Customer",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Blanket Order",
-   "link_count": 0,
-   "link_to": "Blanket Order",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Partner",
-   "link_count": 0,
-   "link_to": "Sales Partner",
-   "link_type": "DocType",
-   "onboard": 0,
    "type": "Link"
   },
   {
@@ -123,6 +90,17 @@
    "type": "Link"
   },
   {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Group",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
    "dependencies": "Item, Price List",
    "hidden": 0,
    "is_query_report": 0,
@@ -145,72 +123,6 @@
    "type": "Link"
   },
   {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Item Group",
-   "link_count": 0,
-   "link_to": "Item Group",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Product Bundle",
-   "link_count": 0,
-   "link_to": "Product Bundle",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Promotional Scheme",
-   "link_count": 0,
-   "link_to": "Promotional Scheme",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Pricing Rule",
-   "link_count": 0,
-   "link_to": "Pricing Rule",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Shipping Rule",
-   "link_count": 0,
-   "link_to": "Shipping Rule",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Coupon Code",
-   "link_count": 0,
-   "link_to": "Coupon Code",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "hidden": 0,
    "is_query_report": 0,
    "label": "Settings",
@@ -225,39 +137,6 @@
    "label": "Selling Settings",
    "link_count": 0,
    "link_to": "Selling Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Terms and Conditions Template",
-   "link_count": 0,
-   "link_to": "Terms and Conditions",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Taxes and Charges Template",
-   "link_count": 0,
-   "link_to": "Sales Taxes and Charges Template",
-   "link_type": "DocType",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "UTM Source",
-   "link_count": 0,
-   "link_to": "UTM Source",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -299,97 +178,29 @@
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Territory",
+   "label": "Sales Taxes and Charges Template",
    "link_count": 0,
-   "link_to": "Territory",
+   "link_to": "Sales Taxes and Charges Template",
    "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
    "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Campaign",
+   "label": "Terms and Conditions Template",
    "link_count": 0,
-   "link_to": "Campaign",
+   "link_to": "Terms and Conditions",
    "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Point of Sale",
-   "link_count": 6,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Point-of-Sale Profile",
-   "link_count": 0,
-   "link_to": "POS Profile",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "POS Settings",
-   "link_count": 0,
-   "link_to": "POS Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "POS Opening Entry",
-   "link_count": 0,
-   "link_to": "POS Opening Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "POS Closing Entry",
-   "link_count": 0,
-   "link_to": "POS Closing Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Loyalty Program",
-   "link_count": 0,
-   "link_to": "Loyalty Program",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Loyalty Point Entry",
-   "link_count": 0,
-   "link_to": "Loyalty Point Entry",
-   "link_type": "DocType",
-   "onboard": 0,
+   "onboard": 1,
    "type": "Link"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
    "label": "Key Reports",
-   "link_count": 9,
+   "link_count": 0,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -416,61 +227,6 @@
    "type": "Link"
   },
   {
-   "dependencies": "",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Funnel",
-   "link_count": 0,
-   "link_to": "sales-funnel",
-   "link_type": "Page",
-   "onboard": 1,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Order Trends",
-   "link_count": 0,
-   "link_to": "Sales Order Trends",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Quotation",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Quotation Trends",
-   "link_count": 0,
-   "link_to": "Quotation Trends",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Customer",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Customer Acquisition and Loyalty",
-   "link_count": 0,
-   "link_to": "Customer Acquisition and Loyalty",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Inactive Customers",
-   "link_count": 0,
-   "link_to": "Inactive Customers",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "dependencies": "Sales Order",
    "hidden": 0,
    "is_query_report": 1,
@@ -488,58 +244,6 @@
    "label": "Item-wise Sales History",
    "link_count": 0,
    "link_to": "Item-wise Sales History",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Other Reports",
-   "link_count": 11,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "dependencies": "Address",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Customer Addresses And Contacts",
-   "link_count": 0,
-   "link_to": "Address And Contacts",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Item",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Available Stock for Packing Items",
-   "link_count": 0,
-   "link_to": "Available Stock for Packing Items",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Pending SO Items For Purchase Request",
-   "link_count": 0,
-   "link_to": "Pending SO Items For Purchase Request",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Delivery Note",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Delivery Note Trends",
-   "link_count": 0,
-   "link_to": "Delivery Note Trends",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -567,64 +271,21 @@
    "type": "Link"
   },
   {
-   "dependencies": "Customer",
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Customers Without Any Sales Transactions",
+   "label": "Customer Ledger Summary",
    "link_count": 0,
-   "link_to": "Customers Without Any Sales Transactions",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Customer",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Partners Commission",
-   "link_count": 0,
-   "link_to": "Sales Partners Commission",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Territory Target Variance Based On Item Group",
-   "link_count": 0,
-   "link_to": "Territory Target Variance Based On Item Group",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Person Target Variance Based On Item Group",
-   "link_count": 0,
-   "link_to": "Sales Person Target Variance Based On Item Group",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "dependencies": "Sales Order",
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Sales Partner Target Variance Based On Item Group",
-   "link_count": 0,
-   "link_to": "Sales Partner Target Variance based on Item Group",
+   "link_to": "Customer Ledger Summary",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-02-19 13:01:26.893303",
+ "modified": "2026-07-03 13:44:07.820564",
  "modified_by": "Administrator",
  "module": "Selling",
+ "module_onboarding": "Selling Onboarding",
  "name": "Selling",
  "number_cards": [
   {
@@ -648,6 +309,123 @@
  "roles": [],
  "sequence_id": 6.0,
  "shortcuts": [],
+ "sidebar_items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "house",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "Selling",
+   "link_type": "Workspace",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "chart-column",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Dashboard",
+   "link_to": "Selling",
+   "link_type": "Dashboard",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "store",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "receipt",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Sales Invoice",
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Customer",
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Item",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Sales Person",
+   "link_to": "Sales Person",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Sales Analytics",
+   "link_to": "Sales Analytics",
+   "link_type": "Report",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Customer Credit Balance",
+   "link_to": "Customer Credit Balance",
+   "link_type": "Report",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "standard": 1,
  "title": "Selling",
  "type": "Workspace"
 }
